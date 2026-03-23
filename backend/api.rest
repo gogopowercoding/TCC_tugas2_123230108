@@ -13,8 +13,8 @@ POST {{baseUrl}}/users HTTP/1.1
 Content-Type: application/json
 
 {
-  "nama": "fuu",
-  "password": "123456"
+  "nama": "fure",
+  "password": "fure123"
 }
 
 
@@ -23,12 +23,12 @@ POST {{baseUrl}}/users/login HTTP/1.1
 Content-Type: application/json
 
 {
-  "nama": "fuu",
-  "password": "123456"
+  "nama": "fure",
+  "password": "fure123"
 }
 
 ### GET : Ambil Notes berdasarkan User ID
-GET {{baseUrl}}/notes/user/9 HTTP/1.1
+GET {{baseUrl}}/notes/user/1 HTTP/1.1
 Content-Type: application/json
 
 
@@ -37,14 +37,14 @@ POST {{baseUrl}}/notes HTTP/1.1
 Content-Type: application/json
 
 {
-  "user_id": 9,
-  "judul": "Belajar Backend",
-  "isi": "Belajar Express + MySQL"
+  "user_id": 1,
+  "judul": "Belajar migrasi DB",
+  "isi": "GCP dongg"
 }
 
 
 ### PUT : Update Note
-PUT {{baseUrl}}/notes/10 HTTP/1.1
+PUT {{baseUrl}}/notes/2 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -54,5 +54,5 @@ Content-Type: application/json
 
 
 ### DELETE : Hapus Note
-DELETE {{baseUrl}}/notes/10 HTTP/1.1
+DELETE {{baseUrl}}/notes/2 HTTP/1.1
 Content-Type: application/json
